@@ -1,0 +1,104 @@
+// .home{
+//     background-image: url("../../pictures/ladida-photo.jpg");
+//     background-size: 100% 100%;
+@import "../../../global.scss";
+
+.home{
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    position: relative;
+    background: black;
+    border-bottom: solid $maincolor 1.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 200px;
+    }
+
+
+    img{
+        width: 800px;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        
+
+        filter: drop-shadow(1px 1px 0 $maincolor) 
+                drop-shadow(0px 0px 0 $maincolor);
+
+        // @include mobile{
+        //     width: 350px;
+        //     bottom: 55%;
+        // }
+    }
+
+        .hush-button{
+            display: flex;
+            position: relative;
+            width: 500px;
+            justify-content: space-between;
+
+            .merch-button{
+                
+            }
+
+            .button-1{
+                width: 100px;
+            }
+
+        }
+
+}
+
+@media screen and (max-width: #{$width-ipad - 1}){
+    video{
+        display: none;
+    }
+
+    .home{
+        background-image: url("../../../pictures/ladida-photo.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        .wrapper{
+            height: 250px;
+        
+            img{
+                width: 530px;
+            }
+
+            .hush-button{
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                height: 125px;
+            }
+    }
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .home{
+
+        .wrapper{
+            height: 200px;
+
+            img{
+                width: 350px;
+            }
+        }
+    }
+}

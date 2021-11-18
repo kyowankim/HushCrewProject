@@ -1,0 +1,64 @@
+@import "../../../global.scss";
+
+.contact{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+    .left{
+        display: flex;
+        flex: 0.5;
+        position: relative;
+    }
+    
+    .right{
+        display: flex;
+        flex: 0.5;
+        align-items: center;
+        justify-content: center;
+        
+        
+        .outline{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 90%;
+            align-items: center;
+            border: solid $maincolor 1px;
+            border-radius: 10px;
+            justify-content: space-evenly;
+
+            h1{
+                color: $maincolor;
+            }
+
+            .fullname{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 70%;
+            }
+
+
+            .text{
+                width: 70%;
+            
+                &.basic{
+                    width: 40%;
+                }
+
+                &.message{
+                    border: solid black 1px;
+                    border-radius: 5px;
+                    width: 80%;
+                }   
+            }
+
+            .button{
+                color: $maincolor;
+                border: solid $maincolor 1px;
+            }
+        }
+    }
+}

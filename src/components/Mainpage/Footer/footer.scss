@@ -1,0 +1,39 @@
+@import "../../../global.scss";
+
+.footer{
+    position: relative;
+    display: flex;
+    height: 27vh !important;
+    background-color: white;
+    // background-image: url("../../../pictures/collage-spotlight.jpg");
+    overflow: hidden;
+    
+    .bottom-bar{
+        box-sizing: border-box;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: $maincolor;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+        border-top: solid black 5px;
+        
+        span{
+            font-size: 25px;
+            color: whitesmoke;
+        }
+
+        ul{
+            text-align: center;
+            height: 80%;
+            width: 15%;
+            justify-content: space-between;
+        }
+        li{
+            margin-top: 5px; 
+        }
+    }
+    
+}

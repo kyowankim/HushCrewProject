@@ -1,0 +1,164 @@
+@import "../../../global.scss";
+
+.aboutus{
+    background-color: $maincolor;
+    display: flex;
+    border-bottom: solid $maincolor 5px;
+    border-top: solid $maincolor 5px;
+
+    .left{
+        display: flex;
+        flex: 0.4;
+        background-color: white;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        
+        
+        .bio{
+            color: $maincolor;
+            margin: 40px;
+
+            .welcome{
+                font-size: 2.5vw;
+            }
+
+            .header{
+                padding-top: 8vh;
+                padding-bottom: 2vh;
+                height: 20vh;
+                overflow: hidden;
+                
+
+                p{
+                    font-size: 2.5vw;
+                    font-weight: bold;
+                }
+
+            }
+            p{
+                margin-top: 5px;
+                font-size: 1.3vw;
+            }
+        }
+    }
+
+    .right{
+        display: flex;
+        flex: 0.6;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+
+        .mkdc-img{
+            height: 100%;   
+            width: 100%;
+            position: absolute;
+            top: 0;
+            overflow: hidden;
+        }
+
+        .down-arrow{
+            width: 15%;
+            height: 10%;
+            bottom: 0%;
+            right: 40%;
+            position: absolute;
+            animation: arrowBlink 2.5s infinite;
+            transform: rotateY();
+        }
+
+        @keyframes arrowBlink{
+            100%{
+                opacity: 0;
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 1400px){
+    .aboutus{
+        .left{
+            .bio{
+               .header{
+                 padding-top: 5vh;
+                 padding-bottom: 0;
+                 height: 15vh;
+               }
+            }
+        }
+        .right{
+           
+        }
+    }
+}
+
+@media screen and (max-width: #{$width-ipad-pro}){
+    .aboutus{
+        .left{
+            .bio{
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .aboutus{
+        .left{
+            flex: .5;
+
+            .bio{
+                .welcome{
+                    font-size: 2vw;
+                    padding-top: 50px;
+                }
+
+                .header{
+                    height: 15vh;
+                    p{
+                        font-size: 2vw; 
+                    }
+                }
+
+                p{
+                    font-size: 1vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (orientation: portrait){
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+
+        .left{
+            flex: 0.6;
+            overflow: hidden;
+            .bio{
+                width: 100%;
+                
+                .welcome{
+                    font-size: 3vh;
+                }
+
+                .header{
+                    height: 11vh;
+
+                    p{
+                        font-size: 2.5vh;
+                    }
+                }
+                p{
+                    margin-top: 5px;
+                    font-size: 1.5vh;
+                }
+            }
+        }
+    }
+}

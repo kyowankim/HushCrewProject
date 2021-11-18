@@ -1,0 +1,50 @@
+@import "../../../global.scss";
+
+.submenu{
+    bottom: 0pt;
+    width: 200px;
+    height: 75px;
+    background-color: $maincolor;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: -5px;
+    right: 380px;
+    overflow: hidden;
+    transition: all 1s ease;
+    border-radius: 15px;
+    
+    &.active{
+        top: 60px;
+    }
+
+    ul{
+        width: 100%;
+        margin: auto;
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        position: relative;
+        padding-bottom: 35px;
+        padding-right: 0px;
+
+        .hush-boston{
+            padding-top: 5%;
+        }
+
+        li{
+            margin-top: 10px;
+            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            &:hover{
+                font-weight: 400;
+            }
+
+        }
+    }
+}

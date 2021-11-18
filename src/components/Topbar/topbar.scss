@@ -1,0 +1,158 @@
+@import "../../global.scss";
+
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: $maincolor;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1.5s;
+    overflow: hidden;
+    border-bottom: solid black 2px;
+
+    img{
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+        border: solid black;
+    }
+
+    .wrapper{
+        padding: 10px 30px;     //Padding is used to create space around an element's content, inside of any defined borders
+        align-items: center;    //
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            a.hush-short{
+                display: none;
+            }
+
+            a.hush-long{
+                font-size: 40px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+
+                &:hover{
+                    transform: scale(.95)
+                }
+            }
+
+            a.logo{
+                
+
+                &:hover{
+                    transform: scale(.95)
+                }
+            }
+        }
+
+        .right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            .container-right{
+                margin-right: 50px;
+                display: flex;
+                align-items: center;
+                color: inherit;
+                height: 100%;
+            }
+
+            .container-right:hover{
+                transform: scale(.95);
+            }
+            
+            .hamburger{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                margin-left: 30px;
+
+                span{
+                    width: 100%;
+                    height: 3px;
+                    background-color: white;
+                    transform-origin: left;
+                    transition: all 1.3s ease;
+                }
+            }
+        }
+    }
+
+    &.active{
+        background-color: $maincolor;
+        color: white;
+
+        .hamburger{
+            span{
+                &:first-child{
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px){
+    .topbar{
+        .wrapper{
+            .left{
+                a.hush-long{
+                    display: none;
+                }
+
+                a.hush-short{
+                    display: flex;
+                    font-size: 40px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: inherit;
+                    padding-left: 10px;
+                    padding-bottom: 5px;
+
+                    &:hover{
+                        transform: scale(.95)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: #{$width-ipad - 1}){
+    .topbar{
+        .wrapper{
+            .right{
+                .container-right{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
