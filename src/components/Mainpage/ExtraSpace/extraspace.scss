@@ -1,6 +1,21 @@
-.extraspace{
-    background-color: white;
-    height: 0vh !important;
-    
-    // background-image: url("../../pictures/collage2.jpg");
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper{
+        height: 500px;
+        width: 500px;
+        border: solid blue;
+
+        .swiper-container{
+            border: solid black;
+        
+            .swiper-slide{
+                border: solid red;
+            }
+        }
+    }
 }
+

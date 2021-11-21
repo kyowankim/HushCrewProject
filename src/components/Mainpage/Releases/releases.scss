@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url("../../../pictures/collage-spotlight.jpg");
+    background-image: url("../../../pictures/collage2-mercury.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -108,14 +108,14 @@
                 
                 .video-container{
                     display: flex;
-                    width: 100%;
+                    width: 75%;
                     height: 100%;
                     overflow: hidden;
                 }
                 // border: solid $maincolor;
                 iframe{
                     height: 99%;
-                    width: 99%;
+                    width: 100;
                     border-radius: 30px;
                     
                 }

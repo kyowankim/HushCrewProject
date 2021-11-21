@@ -4,6 +4,7 @@
 @import "../../../global.scss";
 
 .home{
+    
     video {
         object-fit: cover;
         width: 100%;
@@ -13,7 +14,7 @@
 
     position: relative;
     background: black;
-    border-bottom: solid $maincolor 1.5px;
+    border-bottom: solid $maincolor 10px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -3,79 +3,136 @@
 .aboutus{
     background-color: $maincolor;
     display: flex;
-    border-bottom: solid $maincolor 5px;
-    border-top: solid $maincolor 5px;
+    // flex-direction: row;
+    justify-content: center;
+    // border-bottom: solid $maincolor 5px;
+    // border-top: solid $maincolor 5px;
+    height: 90vh !important;
+    align-items: center;
+    background-image: url("../../../pictures/collage2-mercury.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 
     .left{
         display: flex;
-        flex: 0.4;
-        background-color: white;
+        flex: 0.5;
         position: relative;
         justify-content: center;
-        align-items: center;
+        height: 90%;
+        width: 90%;
+        border: solid green;
         
         
         .bio{
             color: $maincolor;
-            margin: 40px;
+            // margin: 40px;
+            border: solid blue;
+            background-color: white;
+            border-radius: 10%;
+            height: 80%;
+            padding: 3%;
 
             .welcome{
                 font-size: 2.5vw;
+                justify-content: center;
+                align-items: center;
+                display: flex;
             }
 
             .header{
-                padding-top: 8vh;
-                padding-bottom: 2vh;
-                height: 20vh;
-                overflow: hidden;
                 
+                // padding-top: 20vh;
+                // padding-bottom: 2vh;
+                height: 35vh;
+                overflow: hidden;
 
                 p{
                     font-size: 2.5vw;
                     font-weight: bold;
                 }
 
+                span{
+                    padding-top: 5vh;
+                    font-size: 3vw;
+                    font-weight: bold;
+                    display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                }
+
             }
+
             p{
+                
                 margin-top: 5px;
                 font-size: 1.3vw;
             }
         }
     }
-
+    
     .right{
+        flex: 0.5;
+        border: solid red;
+        height: 90%;
+        background-color: aqua;
         display: flex;
-        flex: 0.6;
-        background-color: white;
         justify-content: center;
         align-items: center;
-        position: relative;
+
+        .embla {
+            // overflow: hidden;
+            border: solid green;
+            width: 100%;
+          }
+          .embla__container {
+            display: flex;
+          }
+          .embla__slide {
+            position: relative;
+            flex: 0 0 100%;
+            border: solid red;
+          }
+    }
+
+    // .right{
+    //     display: flex;
+    //     flex: 0.6;
+    //     background-color: white;
+    //     justify-content: center;
+    //     align-items: center;
+    //     position: relative;
+        
         
 
-        .mkdc-img{
-            height: 100%;   
-            width: 100%;
-            position: absolute;
-            top: 0;
-            overflow: hidden;
-        }
+    //     .mkdc-img{
+    //         height: 70%;   
+    //         width: 45%;
+    //         position: absolute;
+    //         top: 0;
+    //         overflow: hidden;
+    //         border-radius: 5%;
+    //     }
 
-        .down-arrow{
-            width: 15%;
-            height: 10%;
-            bottom: 0%;
-            right: 40%;
-            position: absolute;
-            animation: arrowBlink 2.5s infinite;
-            transform: rotateY();
-        }
+    //     .down-arrow{
+    //         width: 15%;
+    //         height: 10%;
+    //         bottom: 0%;
+    //         right: 40%;
+    //         position: absolute;
+    //         animation: arrowBlink 2.5s infinite;
+    //         transform: rotateY();
+    //     }
 
-        @keyframes arrowBlink{
-            100%{
-                opacity: 0;
-            }
-        }
-    }
+    //     @keyframes arrowBlink{
+    //         100%{
+    //             opacity: 0;
+    //         }
+    //     }
+    // }
     
 }
 
