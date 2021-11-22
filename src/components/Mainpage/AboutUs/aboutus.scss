@@ -20,43 +20,37 @@
 
     .left{
         display: flex;
-        flex: 0.5;
+        flex: 0.4;
         position: relative;
         justify-content: center;
         height: 90%;
+        margin: 1%;
         
         
         .bio{
             color: white;
             // margin: 40px;
-            background-color: $maincolor;
+            background-color: rgba(0,0,0,0.7);
             border-radius: 10%;
             height: 80%;
-            padding: 3%;
-            
-
-            .welcome{
-                font-size: 2.5vw;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-            }
+            padding: 5%;
 
             .header{
                 
                 // padding-top: 20vh;
                 // padding-bottom: 2vh;
+                
                 height: 35vh;
                 overflow: hidden;
 
                 p{
-                    font-size: 2.5vw;
+                    font-size: 2vw;
                     font-weight: bold;
                 }
 
                 span{
                     padding-top: 5vh;
-                    font-size: 3vw;
+                    font-size: 4vw;
                     font-weight: bold;
                     display: flex;
                     // align-items: center;
@@ -65,10 +59,11 @@
 
             }
 
-            p{
-                
-                margin-top: 5px;
-                font-size: 1.3vw;
+            p.summary{
+                font-size: 1vw;
+                width: 80%;
+                word-wrap: break-word;
+                line-height: 5vh;
             }
         }
     }
@@ -146,6 +141,7 @@
                 box-sizing: border-box;
                 padding: 10px 0;
                 background-color: black;
+                border-radius: 20px;
               }
               
               .mySwiper .swiper-slide {
@@ -161,8 +157,9 @@
               .swiper-slide iframe{
                 width: 80%;
                 height: 100%;
-                border-radius: 10%;
+                // border-radius: 10%;
                 border: solid black;
+                border-radius: 5%;
               }
         }
     }
@@ -177,7 +174,11 @@
                .header{
                  padding-top: 5vh;
                  padding-bottom: 0;
-                 height: 15vh;
+                 height: 25vh;
+               }
+
+               p.summary{
+                   font-size: 1.3vh;
                }
             }
         }
@@ -208,7 +209,7 @@
                 }
 
                 .header{
-                    height: 15vh;
+                    height: 25vh;
                     p{
                         font-size: 2vw; 
                     }
@@ -232,28 +233,37 @@
             overflow: hidden;
             align-items: center;
             .bio{
-                width: 100%;
-                
-                .welcome{
-                    font-size: 3vh;
-                }
+                width: 60%;
+                padding: 7%;
 
                 .header{
                     height: 11vh;
 
                     p{
-                        font-size: 2.5vh;
+                        font-size: 2vh;
+                    }
+
+                    span{
+                        padding-top: 1vh;
+                        font-size: 4vh;
                     }
                 }
-                p{
-                    margin-top: 5px;
-                    font-size: 1.5vh;
+                p.summary{
+                    line-height: 2vh;
+                    font-size: 2vw;
+                    padding-top: 2vh;
                 }
             }
         }
 
         .right{
             width: 100vw;
+
+            .swiper{
+                .mySwiper{
+                    border-radius: 0;
+                }
+            }
         }
     }
 }

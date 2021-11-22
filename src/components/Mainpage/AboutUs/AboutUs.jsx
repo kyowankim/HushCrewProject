@@ -2,7 +2,7 @@ import "./aboutus.scss"
 import ReactPlayer from "react-player"
 import { init } from "ityped"
 
-import { useEffect,useRef,useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
 import SwiperCore, {FreeMode,Navigation,Thumbs} from 'swiper';
 
@@ -48,13 +48,9 @@ export default function Aboutus() {
                             <p >We are a K-POP Cover Dance Team in...</p>
                             <span ref={textRef} className="textref"> </span>
                         </div>
-                        <p>I dont know what to put here someone help pls</p>
-                        <p>Never gonna give you up Never gon let you down</p>
-                        <p>Never gon let you down and desert you never going to</p>
-                        <p>Never gon run around and desert you you you</p>
-                        <p>Never gonna make you cry when is it gon end</p>
-                        <p>I dont ever wanna say good by so lets say good bye</p>
-                        <p>Never gon tell a lie and hurt yew but whatever happens</p>
+                        <p className="summary"> Founded in 2019, Hush Crew is a Boston and LA-based cover dance group that has been featured across several popular Korean platforms, 
+                            such as 1theK, MBC, and JTBC. This group of friends performs across the U.S., and has garnered millions of views on YouTube and TikTok.
+                        </p>
                 </div>
             </div>
             <div className="right">
@@ -62,7 +58,8 @@ export default function Aboutus() {
                     <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': '#fff'}} spaceBetween={10} navigation={true} thumbs={{ swiper: thumbsSwiper }} className="mySwiper2">
                         {videoID.map((video)=> (
                             <SwiperSlide>
-                                <ReactPlayer 
+                                <ReactPlayer
+                                key={video} 
                                 url={"https://www.youtube.com/watch?v=" + video} 
                                 width="100%" 
                                 height="100%"

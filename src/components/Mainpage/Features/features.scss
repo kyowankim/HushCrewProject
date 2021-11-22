@@ -1,10 +1,19 @@
 @import "../../../global.scss";
 
-.grid{
+
+.features{
+    background-color: white;
+    // height: 125vh !important;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: $maincolor;
+    justify-content: center;
+    position: relative;
+    background-image: url("../../../pictures/collage2-mercury.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .container{
         height: 80%;
@@ -57,7 +66,7 @@
         .left{
             display: flex;
             flex: 0.5;
-            // border: solid black;
+            border: solid black;
             height: 100%;
         }
         
@@ -94,3 +103,4 @@
     }
 
 }
+
