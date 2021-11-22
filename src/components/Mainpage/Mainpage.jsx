@@ -12,7 +12,6 @@ export default function Firstpage() {
     return (
         <div className="sections">
             <Home/>
-            <ExtraSpace/>
             <AboutUs/>
             <Grid/>
             <Releases/>

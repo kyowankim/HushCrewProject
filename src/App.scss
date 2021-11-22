@@ -1,5 +1,6 @@
 .App{
     height: 100vh;
+    width: 100vw;
     position: relative;
 
     .sections{
@@ -9,10 +10,7 @@
         top: 70px;
         scroll-behavior: smooth;    //Allows the scrolling to be smooth and not instantaneous when clicking href links
         // scroll-snap-type: y mandatory;  //This will make the webpage snap to closest "section" page
-        scrollbar-width: none; //Hides the scroll bar - Firefox only
-        &::-webkit-scrollbar{   //This hides the scroll bar for all other web browser: chrome, safari, etc
-            display: none;
-        }
+        overflow-x: hidden;
         > *{
             width: 100vw;
             height: calc(100vh - 70px);

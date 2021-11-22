@@ -3,7 +3,6 @@ import "./releases.scss"
 import { useState} from "react";
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ReactPlayer from "react-player";
 
 // import useFetch from "../Releases/fetchVideoID"
 
@@ -43,24 +42,7 @@ export default function Releases() {
     
     return (
         <div className="releases" id="releases">
-            <div className="slider" id="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)`}}>
-                {videoID && videoID.map((d)=>(
-                    <div key={d} className="container">
-                        <div className="item">
-                            <div className="video-container">
-                                <ReactPlayer 
-                                    className="youtube-video" 
-                                    url={"https://www.youtube.com/watch?v=" + d } 
-                                    width="100%" 
-                                    height="100%"
-                                />
-                            </div>
-                        </div>
-                        <ArrowBackIosNewIcon className="left arrow" alt="" onClick={()=>handleClick("left")} />
-                        <ArrowForwardIosIcon className="right arrow" alt="" onClick={()=>handleClick("right")}/>
-                    </div>
-                ))}
-            </div>
+            
         </div>
     );
 

@@ -1,13 +1,21 @@
 import "./aboutus.scss"
-
+import ReactPlayer from "react-player"
 import { init } from "ityped"
-import { useEffect,useRef } from "react"
-import useEmblaCarousel from 'embla-carousel-react'
-import blog1 from "../../../pictures/bostonglobe.PNG"
-import blog2 from "../../../pictures/thekmeal.PNG"
-import blog3 from "../../../pictures/buboston.PNG"
+
+import { useEffect,useRef,useState } from "react"
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+import SwiperCore, {FreeMode,Navigation,Thumbs} from 'swiper';
+
+// Direct React component imports
+
+// Styles must use direct files imports
+import 'swiper/swiper.scss'; // core Swiper
+import 'swiper/modules/free-mode/free-mode.scss'; // Pagination module
+import 'swiper/modules/navigation/navigation.scss'; // Navigation module
+import 'swiper/modules/thumbs/thumbs.scss'; // Pagination module
 
 
+SwiperCore.use([FreeMode,Navigation,Thumbs]);
 
 
 
@@ -22,7 +30,15 @@ export default function Aboutus() {
          })
     }, []);
     
-    const [emblaRef] = useEmblaCarousel()
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const videoID = ["dxtrogpwDE8","IV-Z0J0SsYk","NI-LaLfObYE","W4ROm95bRuI","foYEckTDBwg"]
+    const thumbnail = [
+        "https://i.ytimg.com/vi/dxtrogpwDE8/hqdefault.jpg",
+        "https://i.ytimg.com/vi/IV-Z0J0SsYk/hqdefault.jpg",
+        "https://i.ytimg.com/vi/NI-LaLfObYE/hqdefault.jpg",
+        "https://i.ytimg.com/vi/W4ROm95bRuI/hqdefault.jpg",
+        "https://i.ytimg.com/vi/foYEckTDBwg/hqdefault.jpg"
+    ]
 
     return (
         <div className="aboutus" id="aboutus">
@@ -42,18 +58,25 @@ export default function Aboutus() {
                 </div>
             </div>
             <div className="right">
-                <div className="embla" ref={emblaRef}>
-                    <div className="embla__container">
-                        <div className="embla__slide">
-                            <img src={blog1} alt="" />
-                        </div>
-                        <div className="embla__slide">
-                            <img src={blog2} alt="" />
-                        </div>
-                        <div className="embla__slide">
-                            <img src={blog3} alt="" />
-                        </div>
-                    </div>
+                <div className="videoslider">
+                    <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': '#fff'}} spaceBetween={10} navigation={true} thumbs={{ swiper: thumbsSwiper }} className="mySwiper2">
+                        {videoID.map((video)=> (
+                            <SwiperSlide>
+                                <ReactPlayer 
+                                url={"https://www.youtube.com/watch?v=" + video} 
+                                width="100%" 
+                                height="100%"
+                                />
+                            </SwiperSlide>
+                        ))}    
+                    </Swiper>
+                    <Swiper onSwiper={setThumbsSwiper} spaceBetween={10} slidesPerView={4} freeMode={true} watchSlidesProgress={true} className="mySwiper">
+                            {thumbnail.map((thumb)=>(
+                                <SwiperSlide>
+                                    <img src={thumb} />
+                                </SwiperSlide>
+                            ))}
+                    </Swiper>
                 </div>
             </div>     
         </div>

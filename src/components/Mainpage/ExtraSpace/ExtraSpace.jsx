@@ -1,31 +1,29 @@
 import "./extraspace.scss"
-import { Navigation, Pagination } from 'swiper';
-// Direct React component imports
+
+import ReactPlayer from "react-player";
+
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+import SwiperCore, {FreeMode,Navigation,Thumbs} from 'swiper';
+
+// Direct React component imports
 
 // Styles must use direct files imports
 import 'swiper/swiper.scss'; // core Swiper
+import 'swiper/modules/free-mode/free-mode.scss'; // Pagination module
 import 'swiper/modules/navigation/navigation.scss'; // Navigation module
-import 'swiper/modules/pagination/pagination.scss'; // Pagination module
+import 'swiper/modules/thumbs/thumbs.scss'; // Pagination module
+
+SwiperCore.use([FreeMode,Navigation,Thumbs]);
+
+
 export default function ExtraSpace() {
 
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+   
     return (
-      <div className="page">
-        <div className="wrapper">
-        <Swiper
-          className="swiper-container"
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide className="swiper-slide" id="1">Slide 1</SwiperSlide>
-          <SwiperSlide className="swiper-slide" id="2">Slide 2</SwiperSlide>
-          <SwiperSlide className="swiper-slide" id="3">Slide 3</SwiperSlide>
-          <SwiperSlide className="swiper-slide" id="4">Slide 4</SwiperSlide>
-          <SwiperSlide className="swiper-slide" id="5">Slide 5</SwiperSlide>
-        </Swiper>
-        </div>
-        </div>
+      <div className="extraspace">
+      
+      </div>
     )
 }
