@@ -10,10 +10,10 @@
         height: 100%;
         position: absolute;
     }
-
     position: relative;
-    background: black;
-    border-bottom: solid $maincolor 10px;
+    // background: black;
+    border-bottom: solid $maincolor 5px;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@
     }
 
     .home{
-        background-image: url("../../../pictures/ladida-photo.jpg");
+        background-image: url("../../../pictures/play-photo.jpg");
         background-position: center;
         background-size: cover;
         width: 100vw;
@@ -94,8 +94,8 @@
     .home{
 
         .wrapper{
-            height: 200px;
-
+            height: 275px;
+            
             img{
                 width: 350px;
             }

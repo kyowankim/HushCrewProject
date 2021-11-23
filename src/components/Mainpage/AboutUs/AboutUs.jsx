@@ -57,7 +57,7 @@ export default function Aboutus() {
                 <div className="videoslider">
                     <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': '#fff'}} spaceBetween={10} navigation={true} thumbs={{ swiper: thumbsSwiper }} className="mySwiper2">
                         {videoID.map((video)=> (
-                            <SwiperSlide>
+                            <SwiperSlide key={video}>
                                 <ReactPlayer
                                 key={video} 
                                 url={"https://www.youtube.com/watch?v=" + video} 
@@ -69,7 +69,7 @@ export default function Aboutus() {
                     </Swiper>
                     <Swiper onSwiper={setThumbsSwiper} spaceBetween={10} slidesPerView={4} freeMode={true} watchSlidesProgress={true} className="mySwiper">
                             {thumbnail.map((thumb)=>(
-                                <SwiperSlide>
+                                <SwiperSlide key={thumb}>
                                     <img src={thumb} />
                                 </SwiperSlide>
                             ))}

@@ -1,0 +1,118 @@
+@import "../../../global.scss";
+
+.collab{
+    background-color: $maincolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        height: 90%;
+        width: 90%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+
+        h1{
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .collab-container{
+            height: 90%;
+            width: 80%;
+            // border: solid blue;
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            gap: 10px;
+            grid-template-areas: 
+                "kft mercy"
+                "farrah last";
+               
+            span{
+                font-size: 1.3vw;
+            }
+            .kft{
+                grid-area: kft;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                    a{
+                        
+                        width: 40%;
+                        height: 80%;
+                        object-fit: cover;
+        
+                    }
+                    
+                    img{
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            
+            .mercy{
+                grid-area: mercy;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                a{
+                    // border: solid red;
+                    width: 50%;
+                    height: 50%;
+                    object-fit: cover;
+    
+                }
+                img{
+                    object-fit: cover;
+                    height: 80%;
+                    width: 100%;
+                }
+            }
+
+            .farrah{
+                grid-area: farrah;
+                background-color: white;
+                border-radius: 20px;
+            }
+
+            .last{
+                grid-area: last;
+                background-color: white;
+                border-radius: 20px;
+            }
+
+        }
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .collab{
+        .container{
+            .collab-container{
+                grid-template: 1fr 1fr 1fr 1fr / 1fr;
+                grid-template-areas: 
+                "kft"
+                "mercy"
+                "farrah"
+                "last";
+
+                span{
+                    font-size: 2.5vw;
+                }
+            }
+        }
+    }
+}

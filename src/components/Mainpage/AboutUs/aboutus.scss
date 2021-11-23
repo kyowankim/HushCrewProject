@@ -39,9 +39,9 @@
                 
                 // padding-top: 20vh;
                 // padding-bottom: 2vh;
-                
                 height: 35vh;
                 overflow: hidden;
+                
 
                 p{
                     font-size: 2vw;
@@ -63,13 +63,13 @@
                 font-size: 1vw;
                 width: 80%;
                 word-wrap: break-word;
-                line-height: 5vh;
+                line-height: 2vw;
             }
         }
     }
     
     .right{
-        // display: flex;
+        
         flex: 0.5;
         width: 50vw;
         position: relative;
@@ -133,7 +133,7 @@
               
               .mySwiper2 {
                 height: 80%;
-                width: 90%;
+                width: 100%;
               }
               
               .mySwiper {
@@ -155,7 +155,7 @@
               }
               
               .swiper-slide iframe{
-                width: 80%;
+                width: 85%;
                 height: 100%;
                 // border-radius: 10%;
                 border: solid black;
@@ -171,6 +171,8 @@
     .aboutus{
         .left{
             .bio{
+                height: 70%;
+
                .header{
                  padding-top: 5vh;
                  padding-bottom: 0;
@@ -178,20 +180,33 @@
                }
 
                p.summary{
-                   font-size: 1.3vh;
+                   font-size: 1.3vw;
                }
             }
         }
-        .right{
-           
-        }
+            .right{
+                .videoslider{
+                    height: 75%;
+                    .swiper{
+                        .swiper-slide iframe{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
     }
 }
 
-@media screen and (max-width: #{$width-ipad-pro}){
+@media screen and (max-width: #{$width-ipad}){
     .aboutus{
         .left{
             .bio{
+            }
+        }
+
+        .right{
+            .swiper{
+                
             }
         }
     }
@@ -229,7 +244,7 @@
         flex-direction: column;
 
         .left{
-            flex: 0.6;
+            flex: 0.5;
             overflow: hidden;
             align-items: center;
             .bio{
@@ -238,6 +253,7 @@
 
                 .header{
                     height: 11vh;
+                    padding-top: 0;
 
                     p{
                         font-size: 2vh;
@@ -245,12 +261,12 @@
 
                     span{
                         padding-top: 1vh;
-                        font-size: 4vh;
+                        font-size: 7vw;
                     }
                 }
                 p.summary{
-                    line-height: 2vh;
-                    font-size: 2vw;
+                    line-height: 4.5vw;
+                    font-size: 1.2vh;
                     padding-top: 2vh;
                 }
             }
@@ -258,10 +274,16 @@
 
         .right{
             width: 100vw;
+            .videoslider{
+                padding-top: 10%;
+                .swiper{
+                    .mySwiper{
+                        border-radius: 0;
+                    }
 
-            .swiper{
-                .mySwiper{
-                    border-radius: 0;
+                    .swiper-slide iframe{
+                        width: 70%;
+                    }
                 }
             }
         }

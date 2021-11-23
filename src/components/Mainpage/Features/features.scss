@@ -19,7 +19,7 @@
         height: 80%;
         width: 80%;
         display: flex;
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.7);
         border-radius: 50px;
 
         .swiper {
@@ -27,6 +27,24 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            }
+
+            .swiper-pagination-bullet{
+                background: white;
+                opacity: .5;
+            }
+
+            .swiper-pagination-bullet-active{
+                background-color: rgb(46, 72, 219);
+                opacity: 1;
+            }
+
+            .swiper-button-next{
+                color: rgb(46, 72, 219);
+            }
+
+            .swiper-button-prev{
+                color: rgb(46, 72, 219);
             }
 
             .swiper-slide {
@@ -47,13 +65,71 @@
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
             }
+
+            a{
+                height: 28vw;       //Controls the height of the href pictures
+                width: 33vw;        //Controls the width of the href pictures
+            }
+
+            .left{
+                display: flex;
+                flex: 0.5;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+
+                .video-container{
+                    height: 28vw;       //Controls the height of the react-player video
+                    width: 33vw;        //Controls the width of the react-player video
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    iframe{
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 20px;
+                    }
+                }
+                
+            }
+            
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                flex: 0.4;
+                height: 28vw;
+                
     
-            .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+                h2{
+                    padding-bottom: 10%;
+                    color: white;
+                    font-size: 3vw;
+                    height: 10vw;
+                }
+    
+                p{
+                    height: 20vh;
+                    width: 80%;
+                    word-wrap: break-word;
+                    padding: 5%;
+                    border: solid white 2px;
+                    border-radius: 50px;
+                    color: white;
+                    font-size: 1vw; 
+                }
+            }
+
             }
     
             .swiper {
@@ -63,44 +139,105 @@
         }
         
 
-        .left{
-            display: flex;
-            flex: 0.5;
-            border: solid black;
-            height: 100%;
-        }
         
-        .right{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex: 0.4;
-            
 
-            h2{
-                padding-bottom: 10%;
-                color: $maincolor;
-                ;
-            }
+}
 
-            p{
-                // width: 30vw;
-                height: 20vh;
-                width: 80%;
-                word-wrap: break-word;
-                padding: 5%;
-                border: solid black 1px;
-                border-radius: 50px;
+@media screen and (max-width: 1400px){
+    .features{
+        .container{
+            height: 70%;
+            .swiper{
+                .right{
+                    p{
+                        border-radius: 15px;
+                    }
+                }
             }
         }
+    }
+}
 
+@media screen and (max-width: #{$width-ipad-pro}){
+    .features{
+        .container{
+            height: 90%;
+            width: 90%;
+
+            .swiper{
+                .left{
+                    a{
+                        height: 25vw;
+                        width: 30vw;
+                    }
+
+                    .video-container{
+                        height: 25vw;
+                        width: 30vw;
+                    }
+                }
+
+                .right{
+                    height: 25vw;
+                    h2{
+                        height: 8vw;
+                    }
+                    p{
+                        height: 18vh;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (orientation: portrait){
-    .swiper-slide{
-        flex-direction: column;
+    .features{
+        .container{
+            width: 90%;
+            
+            .swiper{
+                .swiper-button-next{
+                    display: none;
+                }
+                .swiper-button-prev{
+                    display: none;
+                }
+                .swiper-slide{
+
+                    flex-direction: column;
+            
+                        a{
+                            // height: 63vw;
+                            // width: 65vw;
+                            height: 30vh;
+                            width: 30vh;
+                        }
+            
+                        .left{
+                            align-items: flex-start;
+                            
+                            .video-container{
+                                height: 30vh;
+                                width: 30vh;
+                             }
+                        }
+
+                        .right{
+                            h2{
+                                height: 5vh;
+                                font-size: 5vw;
+                            }
+                            p{
+                                font-size: 1.4vh;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
     }
 
-}
 
