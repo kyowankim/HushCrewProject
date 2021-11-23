@@ -23,6 +23,7 @@
         flex: 0.4;
         position: relative;
         justify-content: center;
+        align-items: center;
         height: 90%;
         margin: 1%;
         
@@ -72,7 +73,7 @@
         
         flex: 0.5;
         width: 50vw;
-        position: relative;
+        display: flex;
         justify-content: center;
         align-items: center;
         height: 90%;
@@ -81,6 +82,7 @@
         .videoslider{
             height: 90%;
             // width: 500px;
+            min-width: 0;
 
             .swiper {
                 width: 100%;
@@ -246,7 +248,8 @@
         .left{
             flex: 0.5;
             overflow: hidden;
-            align-items: center;
+            align-items: flex-end;
+
             .bio{
                 width: 60%;
                 padding: 7%;
@@ -274,7 +277,9 @@
 
         .right{
             width: 100vw;
+            align-items: flex-start;
             .videoslider{
+                height: 70%;
                 padding-top: 10%;
                 .swiper{
                     .mySwiper{

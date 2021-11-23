@@ -37,7 +37,7 @@ export default function Features() {
                             </div>
                             <div className="right">
                             <div className="reading"></div>
-                                <h2>The Boston Globe</h2>
+                                <h2>The Boston Globe - Hush Crew takes its slick moves to DTX</h2>
                                 <p>“If you’ve recently strolled through Downtown Crossing on a weekend, you may have stopped to watch them: a gaggle of dancers in 
                                 formation, moving and grooving to Korean pop songs.They call themselves Hush Crew, a group of 20-somethings who’ve been dancing
                                 together for years.” Click the picture to see the full article!

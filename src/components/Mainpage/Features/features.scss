@@ -146,7 +146,7 @@
 @media screen and (max-width: 1400px){
     .features{
         .container{
-            height: 70%;
+            height: 65%;
             .swiper{
                 .right{
                     p{
@@ -161,7 +161,7 @@
 @media screen and (max-width: #{$width-ipad-pro}){
     .features{
         .container{
-            height: 90%;
+            height: 85%;
             width: 90%;
 
             .swiper{
@@ -195,8 +195,10 @@
     .features{
         .container{
             width: 90%;
-            
+            height: 85%;
+
             .swiper{
+                height: 95%;
                 .swiper-button-next{
                     display: none;
                 }
@@ -215,7 +217,7 @@
                         }
             
                         .left{
-                            align-items: flex-start;
+                            align-items: center;
                             
                             .video-container{
                                 height: 30vh;
@@ -224,12 +226,15 @@
                         }
 
                         .right{
+                            flex: 0.5;
                             h2{
                                 height: 5vh;
+                                width: 90%;
                                 font-size: 5vw;
                             }
                             p{
                                 font-size: 1.4vh;
+                                
                             }
                         }
 
