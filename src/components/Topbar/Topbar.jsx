@@ -8,11 +8,10 @@ export default function Topbar({subMenuOpen, setSubMenuOpen, menuOpen, setMenuOp
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <HashLink to="/#home" className="hush-long">Hush Crew</HashLink>
+                    <HashLink to="/#home" className="hush-long-width">Hush Crew</HashLink>
                     <HashLink to="/#home" className="logo">
                         <img src={hushlogo} alt="hushlogo" height="50" width="50" border-radius="50"/>
                     </HashLink>
-                    <HashLink to="/#home" className="hush-short">Crew</HashLink>
                 </div>
                 <div className="right">
                     <div className="container-right" onClick={()=>setSubMenuOpen(!subMenuOpen)}>

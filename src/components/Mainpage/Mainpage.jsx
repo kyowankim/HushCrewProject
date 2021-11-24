@@ -4,7 +4,7 @@ import Footer from './Footer/Footer'
 import Home from './Home/Home'
 import Features from './Features/Features'
 import Collab from './Collab/Collab'
-import ExtraSpace from './ExtraSpace/ExtraSpace'
+// import ExtraSpace from './ExtraSpace/ExtraSpace'
 import "./mainpage.scss"
 
 

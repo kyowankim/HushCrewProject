@@ -42,7 +42,7 @@
             }
             a{
                         
-                width: 20vw;
+                width: 22vw;
                 height: 12vw;
                 object-fit: cover;
                 // border: solid red;
@@ -71,8 +71,8 @@
                     
                     img{
                         object-fit: cover;
-                        height: 100%;
-                        width: 100%;
+                        height: 80%;
+                        width: 80%;
                     }
                 }
             
@@ -134,7 +134,7 @@
                     .yes-style-link{
                         height: 100%;
                         width: 90%;
-                        color: blue;
+                        color: rgb(0, 132, 255);
                         padding-top: 5%;
                     }
                 }
@@ -148,7 +148,7 @@
     .collab{
         .container{
             .collab-container{
-                height: 70%;
+                height: 65%;
             }
         }
     }
@@ -180,11 +180,10 @@
 @media screen and (orientation:portrait) {
     .collab{
         .container{
-            border: solid red;
 
             h1{
                 font-size: 8vw;
-                border: solid red;
+                
             }
             .collab-container{
                 grid-template: 1fr 1fr 1fr 1fr / 1fr;
@@ -193,7 +192,7 @@
                 "mercy"
                 "farrah"
                 "yes-style";
-                border: solid red;
+                height: 90%;
 
                 span{
                     font-size: 2.5vw;

@@ -31,11 +31,11 @@
             justify-content: center;
             
             
-            a.hush-short{
+            a.hush-short-width{
                 display: none;
             }
 
-            a.hush-long{
+            a.hush-long-width{
                 font-size: 40px;
                 font-weight: 700;
                 text-decoration: none;
@@ -122,23 +122,14 @@
     .topbar{
         .wrapper{
             .left{
-                a.hush-long{
+                a.hush-long-width{
+                    font-size: 40px;
+                }
+
+                a.logo{
                     display: none;
                 }
 
-                a.hush-short{
-                    display: flex;
-                    font-size: 40px;
-                    font-weight: 700;
-                    text-decoration: none;
-                    color: inherit;
-                    padding-left: 10px;
-                    padding-bottom: 5px;
-
-                    &:hover{
-                        transform: scale(.95)
-                    }
-                }
             }
         }
     }
@@ -147,11 +138,20 @@
 @media screen and (max-width: #{$width-ipad - 1}){
     .topbar{
         .wrapper{
+            padding: 10px 20px;
+            .left{
+                a.hush-long-width{
+                    font-size: 33px;
+                    padding-top: 5%;
+
+                }
+            }
             .right{
                 .container-right{
                     display: none;
                 }
             }
+
 
         }
     }

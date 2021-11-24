@@ -70,7 +70,7 @@ export default function Aboutus() {
                     <Swiper onSwiper={setThumbsSwiper} spaceBetween={10} slidesPerView={4} freeMode={true} watchSlidesProgress={true} className="mySwiper">
                             {thumbnail.map((thumb)=>(
                                 <SwiperSlide key={thumb}>
-                                    <img src={thumb} />
+                                    <img src={thumb} alt=""/>
                                 </SwiperSlide>
                             ))}
                     </Swiper>

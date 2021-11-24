@@ -3,14 +3,13 @@
 .footer{
     position: relative;
     display: flex;
-    height: 27vh !important;
+    height: 30vh !important;
     background-color: white;
     // background-image: url("../../../pictures/collage-spotlight.jpg");
     overflow: hidden;
     
     .bottom-bar{
-        box-sizing: border-box;
-        position: relative;
+        
         height: 100%;
         width: 100%;
         background-color: $maincolor;
@@ -19,21 +18,108 @@
         display: flex;
         color: white;
         border-top: solid black 5px;
-        
-        span{
-            font-size: 25px;
-            color: whitesmoke;
-        }
 
-        ul{
-            text-align: center;
-            height: 80%;
-            width: 15%;
-            justify-content: space-between;
-        }
-        li{
-            margin-top: 5px; 
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+
+            .top{
+                width: 35vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                // border: solid red;
+
+                .wrapper{
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    a{
+                        text-decoration: none;
+                        color: rgb(66, 66, 177);
+
+                    }
+
+                    h2{
+                        font-size: 1.5vw;
+                    }
+
+                    p{
+                        font-size: 1.3vw;
+                    }
+
+                    hr{
+                        width: 100%;
+                        border: none;
+                        background-color: white;
+                        height: 1px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+
+            .bottom{
+                // border-top: solid white 3px;
+                margin-top: 1.5vw;
+                height: 3vw;
+                width: 35vw;
+                // border: solid red;
+
+                .wrapper{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    a{
+                        color: white;
+                        height: 2.5vw;
+                        width: 2.5vw;
+                    }
+                }
+            }
         }
     }
     
+}
+
+@media screen and (max-width: 568px){
+    .footer{
+        .bottom-bar{
+            .container{
+                .top{
+                    width: 70vw;
+                    .wrapper{
+                        h2{
+                            font-size: 5vw;
+                        }
+                        a{
+                            p{
+                                font-size: 3.5vw;
+                            }
+                           
+                        }
+                    }
+                }
+                .bottom{
+                    width: 80vw;
+                    .wrapper{
+                        a{
+                            // border: solid red;
+                            height: 9vw;
+                            width: 9vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
