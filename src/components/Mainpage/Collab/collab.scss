@@ -20,6 +20,7 @@
             display: flex;
             justify-content: center;
             color: white;
+            font-size: 3.5vw;
         }
 
         .collab-container{
@@ -30,12 +31,27 @@
             grid-template: 1fr 1fr / 1fr 1fr;
             gap: 10px;
             grid-template-areas: 
-                "kft mercy"
-                "farrah last";
+                "mercy yes-style"
+                "kft farrah";
                
             span{
-                font-size: 1.3vw;
+                font-size: 1vw;
+                font-weight: 900;
+                width: 90%;
+                padding: 5%;
             }
+            a{
+                        
+                width: 20vw;
+                height: 12vw;
+                object-fit: cover;
+                // border: solid red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
             .kft{
                 grid-area: kft;
                 background-color: white;
@@ -44,13 +60,14 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                    a{
+                    // a{
                         
-                        width: 40%;
-                        height: 80%;
-                        object-fit: cover;
+                    //     width: 40%;
+                    //     height: 80%;
+                    //     object-fit: cover;
+                    //     border: solid red;
         
-                    }
+                    // }
                     
                     img{
                         object-fit: cover;
@@ -64,21 +81,25 @@
                 background-color: white;
                 border-radius: 20px;
                 display: flex;
-                flex-direction: column;
+                // flex-direction: column;
                 align-items: center;
                 justify-content: center;
 
-                a{
-                    // border: solid red;
-                    width: 50%;
-                    height: 50%;
-                    object-fit: cover;
+                // a{
+                //     // border: solid red;
+                //     width: 50%;
+                //     height: 80%;
+                //     // object-fit: cover;
     
-                }
+                // }
+                // img{
+                //     object-fit: cover;
+                //     height: 100%;
+                //     width: 100%;
+                // }
+
                 img{
-                    object-fit: cover;
-                    height: 80%;
-                    width: 100%;
+                    width: 90%;
                 }
             }
 
@@ -86,14 +107,72 @@
                 grid-area: farrah;
                 background-color: white;
                 border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    height: 20%;
+                    width: 80%;
+                }
             }
 
-            .last{
-                grid-area: last;
+            .yes-style{
+                grid-area: yes-style;
                 background-color: white;
                 border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 90%;
+                    height: 99%;
+                }
+
+                span{
+                    .yes-style-link{
+                        height: 100%;
+                        width: 90%;
+                        color: blue;
+                        padding-top: 5%;
+                    }
+                }
             }
 
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .collab{
+        .container{
+            .collab-container{
+                height: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: #{$width-ipad-pro - 1}) {
+    .collab{
+        .container{
+            .collab-container{
+                height: 90%;
+                // a{
+                //     height: 30vw;
+                //     width: 20vw;
+                // }
+
+                span{
+
+                }
+                .kft{
+                    img{
+                        width: 90%;
+                    }
+                }
+            }
         }
     }
 }
@@ -101,16 +180,33 @@
 @media screen and (orientation:portrait) {
     .collab{
         .container{
+            border: solid red;
+
+            h1{
+                font-size: 8vw;
+                border: solid red;
+            }
             .collab-container{
                 grid-template: 1fr 1fr 1fr 1fr / 1fr;
                 grid-template-areas: 
                 "kft"
                 "mercy"
                 "farrah"
-                "last";
+                "yes-style";
+                border: solid red;
 
                 span{
                     font-size: 2.5vw;
+                    width: 50%;
+                }
+                a{
+                    height: 23vw;
+                }
+
+                .kft{
+                    a{
+                        height: 20vw;
+                    }
                 }
             }
         }

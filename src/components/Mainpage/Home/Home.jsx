@@ -18,7 +18,7 @@ export default function Home() {
                     <Button className="button-1" buttonStyle="btn--outline" buttonSize="btn--large" onClick={releases}>
                         Latest Releases!
                     </Button>
-                    <a href="https://www.bonfire.com/" className="merch-button" >
+                    <a href="https://www.bonfire.com/store/hush-crew-store/" className="merch-button" >
                         <Button className="button-1" buttonStyle="btn--outline" buttonSize="btn--large">
                             <div style={{
                                 display: 'flex',    //this code is to align the text and icon on a line
