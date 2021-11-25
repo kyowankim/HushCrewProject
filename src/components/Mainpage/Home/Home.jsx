@@ -11,7 +11,7 @@ export default function Home() {
 
     return (
         <div className="home" id="home">
-            <video src="/videos/snow_Trim.mp4" autoPlay loop muted />
+            
             <div className="wrapper">
                 <img src={hushHorizontal} alt="" className="hush-horizontal" />
                 <div className="hush-button">

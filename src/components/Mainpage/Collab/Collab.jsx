@@ -7,7 +7,7 @@ import yesstyle from "../../../pictures/yesstyle.png"
 
 export default function Collab() {
     return (
-        <div className="collab">
+        <div className="collab" id="collab">
             <div className="container">
                 <h1>Collaborations</h1>
                 <div className="collab-container">  

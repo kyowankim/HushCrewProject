@@ -10,10 +10,10 @@ export default function Menu({menuOpen,setMenuOpen}) {
                     <HashLink to="/#home">Home</HashLink>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
-                    <HashLink smooth to="/#aboutus">About Us</HashLink>
+                    <HashLink smooth to="/#collab">Collaboration</HashLink>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
-                    <HashLink smooth to="/#releases">Latest Releases</HashLink>
+                    <HashLink smooth to="/#features">Features</HashLink>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
                     <Link to="/contact">

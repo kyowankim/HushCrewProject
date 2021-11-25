@@ -43,7 +43,7 @@
 
                     a{
                         text-decoration: none;
-                        color: rgb(66, 66, 177);
+                        color: rgb(124, 29, 29);
 
                     }
 
@@ -83,6 +83,12 @@
                         color: white;
                         height: 2.5vw;
                         width: 2.5vw;
+                        // border: solid red;
+
+                        ion-icon{
+                            font-size: 2vw;
+                        }
+
                     }
                 }
             }
@@ -91,7 +97,41 @@
     
 }
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 1024px) {
+    .footer{
+        .bottom-bar{
+            .container{
+                .top{
+                    width: 50vw;
+                    .wrapper{
+                        h2{
+                            font-size: 2.5vw;
+                        }
+                        a{
+                            p{
+                                font-size: 2vw;
+                            }
+                           
+                        }
+                    }
+                }
+                .bottom{
+                    width: 50vw;
+                    margin-top: 2vw;
+                    .wrapper{
+                        a{
+                            ion-icon{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
     .footer{
         .bottom-bar{
             .container{
@@ -111,11 +151,16 @@
                 }
                 .bottom{
                     width: 80vw;
+                    margin-top: 4vw;
                     .wrapper{
                         a{
                             // border: solid red;
                             height: 9vw;
                             width: 9vw;
+
+                            ion-icon{
+                                font-size: 6vw;
+                            }
                         }
                     }
                 }

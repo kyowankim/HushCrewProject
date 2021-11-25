@@ -23,7 +23,7 @@ export default function Features() {
 
     
     return (
-        <div className="features" id="releases">
+        <div className="features" id="features">
             <div className="container">
                 <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{
                     "clickable": true

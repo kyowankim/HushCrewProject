@@ -15,7 +15,7 @@ export default function Footer() {
                             </a>
                         </div>
                         <div className="wrapper">
-                            <h2>Support Us!</h2>
+                            <h2>Support Us</h2>
                             <hr />
                             <a href="https://www.bonfire.com/store/hush-crew-store/">
                                 <p>Merch store!</p>
@@ -24,20 +24,20 @@ export default function Footer() {
                     </div>
                     <div className="bottom">
                         <div className="wrapper">
-                            <a href="https://twitter.com/hushcrew_" className="twitter">
-                                <ion-icon name="logo-twitter" size="large"></ion-icon>
+                            <a href="https://twitter.com/hushcrew_">
+                                <ion-icon name="logo-twitter" className="twitter"></ion-icon>
                             </a>
                             <a href="https://www.facebook.com/HushCrewBoston" className="facebook">
-                                <ion-icon name="logo-facebook" size="large"></ion-icon>
+                                <ion-icon name="logo-facebook" ></ion-icon>
                             </a>
                             <a href="https://www.tiktok.com/@hushcrew?" className="tiktok">
-                                <ion-icon name="logo-tiktok" size="large"></ion-icon>
+                                <ion-icon name="logo-tiktok" ></ion-icon>
                             </a>
                             <a href="https://www.youtube.com/c/HUSHCREW" className="youtube">
-                                <ion-icon name="logo-youtube" size="large"></ion-icon>
+                                <ion-icon name="logo-youtube" ></ion-icon>
                             </a>
                             <a href="https://www.instagram.com/hushcrew.bos/?hl=en" className="instagram">
-                                <ion-icon name="logo-instagram" size="large"></ion-icon>
+                                <ion-icon name="logo-instagram" ></ion-icon>
                             </a>
                         </div>
                     </div>
