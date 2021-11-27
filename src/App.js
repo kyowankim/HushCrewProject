@@ -7,6 +7,7 @@ import Contact from "./components/RouterLinks/Contact/Contact"
 import Faq from "./components/RouterLinks/Faq/Faq"
 import { useState} from "react"
 import Mainpage from "./components/Mainpage/Mainpage"
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 
@@ -16,6 +17,7 @@ function App() {
   const [menuOpen,setMenuOpen] = useState(false);
 
   return (
+    <ParallaxProvider>
       <div className="App">
         <Router>
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} subMenuOpen={subMenuOpen} setSubMenuOpen={setSubMenuOpen}/>
@@ -28,6 +30,7 @@ function App() {
               </Routes>
         </Router>
       </div>
+      </ParallaxProvider>
   );
 }
 

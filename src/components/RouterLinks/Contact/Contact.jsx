@@ -7,8 +7,8 @@ import { TextField } from '@mui/material';
 export default function Contact() {
     
     return (
-        <div className="sections">
-            <div className="contact">
+        <div className="contact">
+            <div className="sections">
                 <div className="container">
                     <div className="left">
                         <img src={hushCrewLogo} alt="" />
@@ -28,7 +28,7 @@ export default function Contact() {
                                 <TextField 
                                 id="outlined-basic" label="Title" variant="outlined" className="text title"/>
                                 <TextField 
-                                id="message" label="Message" variant="outlined" className="text message" multiline rows={10} />
+                                id="message" label="Message" variant="outlined" className="text message" multiline rows={10}/>
                                 <Button variant="outlined" className="button">Send</Button> 
                             </div>            
                         </div>
