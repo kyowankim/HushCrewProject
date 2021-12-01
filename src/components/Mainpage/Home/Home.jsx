@@ -1,6 +1,5 @@
 import "./home.scss"
 import {Button} from "../../Button/Button"
-import hushHorizontal from "../../../pictures/hush-horizontal.png"
 import StoreIcon from '@mui/icons-material/Store';
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
         <div className="home" id="home">
         <div className="color-overlay"/>
             <div className="wrapper">
-                <img src={hushHorizontal} alt="" className="hush-horizontal" />
+                <img src="https://res.cloudinary.com/duffol2tp/image/upload/v1638375756/hush-horizontal_i045zi.png" alt="" className="hush-horizontal" />
                 <div className="hush-button">
                     <Button className="button-1" buttonStyle="btn--outline" buttonSize="btn--large" onClick={releases}>
                         Latest Releases!

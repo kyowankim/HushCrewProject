@@ -1,8 +1,6 @@
 // import YoutubeVideo from "../../YoutubeVideo/YoutubeVideo"
 import "./features.scss"
-import blog1 from "../../../pictures/bostonglobe.PNG"
-import blog2 from "../../../pictures/buboston.PNG"
-import alexa from "../../../pictures/alexa.PNG"
+
 import ReactPlayer from "react-player";
 
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
@@ -32,7 +30,7 @@ export default function Features() {
                         <SwiperSlide>
                             <div className="left">
                                 <a href="https://www.bostonglobe.com/2021/11/03/lifestyle/k-pop-dance-group-hush-crew-takes-its-slick-moves-streets-boston/">
-                                    <img src={blog1} alt="" />                        
+                                    <img src="https://res.cloudinary.com/duffol2tp/image/upload/v1638375451/bostonglobe_ntom3t.png" alt="" />                        
                                 </a>   
                             </div>
                             <div className="right">
@@ -48,7 +46,7 @@ export default function Features() {
                         <SwiperSlide>
                             <div className="left">
                                 <a href="https://bunewsservice.com/hush-crew-bringing-k-pop-beats-and-dance-to-the-downtown-crossing-area/">
-                                    <img src={blog2} alt="" />                        
+                                    <img src="https://res.cloudinary.com/duffol2tp/image/upload/v1638375488/buboston_vazqbn.png" alt="" />                        
                                 </a>   
                             </div>
                             <div className="right">
@@ -84,7 +82,7 @@ export default function Features() {
                         <SwiperSlide>
                             <div className="left">
                                 <a href="https://www.youtube.com/watch?v=F8JtHa8eEd4&t=330s">
-                                    <img src={alexa} alt="" />                        
+                                    <img src="https://res.cloudinary.com/duffol2tp/image/upload/v1638375429/alexa_xuusbw.png" alt="" />                        
                                 </a>   
                             </div>
                             <div className="right">

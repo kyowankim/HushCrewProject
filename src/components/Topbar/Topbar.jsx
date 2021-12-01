@@ -1,5 +1,4 @@
 import "./topbar.scss"
-import hushlogo from "../../pictures/korean-hush.jpg"
 import { HashLink } from "react-router-hash-link"
 
 
@@ -10,7 +9,7 @@ export default function Topbar({subMenuOpen, setSubMenuOpen, menuOpen, setMenuOp
                 <div className="left">
                     <HashLink to="/#home" className="hush-long-width">Hush Crew</HashLink>
                     <HashLink to="/#home" className="logo">
-                        <img src={hushlogo} alt="hushlogo" height="50" width="50" border-radius="50"/>
+                        <img src="https://res.cloudinary.com/duffol2tp/image/upload/v1638375866/korean-hush_1_qeu4mi.jpg" alt="hushlogo" height="50" width="50" border-radius="50"/>
                     </HashLink>
                 </div>
                 <div className="right">

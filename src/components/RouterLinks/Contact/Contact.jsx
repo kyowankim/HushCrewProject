@@ -1,5 +1,4 @@
 import "./contact.scss"
-import hushCrewLogo from "../../../pictures/hushCrewLogo.JPG"
 import Button from '@mui/material/Button';
 import { TextField } from '@mui/material';
 
@@ -11,7 +10,7 @@ export default function Contact() {
             <div className="sections">
                 <div className="container">
                     <div className="left">
-                        <img src={hushCrewLogo} alt="" />
+                        <img src="https://res.cloudinary.com/duffol2tp/image/upload/v1638376220/hushCrewLogo_azmodu.jpg" alt="" />
                     </div>
                     <div className="right">
                         <div className="outline">
