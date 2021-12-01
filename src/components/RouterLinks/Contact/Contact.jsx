@@ -16,12 +16,8 @@ export default function Contact() {
                         <div className="outline">
                             <div className="wrapper">
                                 <h1>Contact Us!</h1>
-                                <div className="fullname">
-                                    <TextField 
-                                    id="outlined-basic" label="First Name" variant="outlined" className="text-basic"/>
-                                    <TextField 
-                                    id="outlined-basic" label="Last Name" variant="outlined" className="text-basic" />
-                                </div>
+                                <TextField 
+                                id="outlined-basic" label="Name" variant="outlined" className="text name"/>
                                 <TextField 
                                 id="outlined-basic" label="Your email" variant="outlined" className="text email"  />
                                 <TextField 
