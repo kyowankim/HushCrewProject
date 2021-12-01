@@ -33,7 +33,7 @@ export default function Collab() {
                         <a href="https://www.yesstyle.com/en/home.html?rco=HUSHSTYLE&utm_term=HUSHSTYLE&utm_medium=Influencer&utm_source=dynamic&mcg=influencer ">
                             <img src={yesstyle} alt="" />
                         </a>
-                        <span>If you love online shopping as much as we do, try out YesStyle! Use our link AND our code ‘HUSHSTYLE’ to save on your order!
+                        <span>Use our link AND our code ‘HUSHSTYLE’ to save on your order!
                             <a href="https://www.yesstyle.com/en/home.html?rco=HUSHSTYLE&utm_term=HUSHSTYLE&utm_medium=Influencer&utm_source=dynamic&mcg=influencer " 
                                className="yes-style-link"> 
                                HushCrew Referral Link! 

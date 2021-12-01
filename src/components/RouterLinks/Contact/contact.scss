@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            height: 90%;
+            height: 100%;
             width: 100%;
             
             // border: solid red;
@@ -59,7 +59,7 @@
                         justify-content: space-between;
                         height: 100%;
                         width: 100%;
-                        border: solid red;
+                        
     
                         h1{
                             color: $maincolor;
@@ -105,7 +105,6 @@
 
                 .right{
                     flex: 1;
-                    height: 60vw;
 
                     .outline{
                         width: 80%;
@@ -123,19 +122,65 @@
 
 @media screen and (max-width: 900px){
     .contact{
+        // height: 100vh;
         .sections{
             .container{
+                .left{
+                    // display: none;
+                }
+    
                 .right{
-                    position: relative;
-                    height: auto;
-                    flex: auto;
-
+                    // flex: 1;
+    
                     .outline{
-                        // border: none;
+                        width: 80%;
+                        height: 600px;
+    
                         .wrapper{
-                            
+                            // height: 60%;
                         }
                     
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .contact{
+        // height: calc(100vh - 70px);
+        .sections{
+            // height: 100vh;
+            .container{
+                .right{
+                    padding-top: 20%;
+                    .outline{
+                        height: 90vh;
+
+                        .wrapper{
+                            // margin: 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-aspect-ratio: 7/4){
+    .contact{
+        .sections{
+            height: 200vh;
+
+            .container{
+                .right{
+                    // height: 400vh;
+
+                    .outline{
+                        height: 100%;
                     }
                 }
             }

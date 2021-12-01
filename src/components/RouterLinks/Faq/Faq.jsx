@@ -30,7 +30,7 @@ export default function Faq() {
         <div className="faq">
             <div className="sections">
                 <div className="container">
-                    <h1>Frequently Asked Questions (FAQ)</h1>
+                    <h1 className="header">Frequently Asked Questions (FAQ)</h1>
                     <div className="questions">
                         {questions.map((item) => 
                             <Accordion className="acc" key={item.question}>

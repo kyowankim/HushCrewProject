@@ -10,12 +10,12 @@
     //     height: 100%;
     //     position: absolute;
     // }
-    background-image: url("../../../pictures/play-photo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../pictures/play-photo.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
     // background: black;
-    border-bottom: solid $maincolor 2px;
+    // border-bottom: solid $maincolor 2px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -96,6 +96,7 @@
 @media screen and (max-width: 480px){
 
     .home{
+        height: 55vh !important;
 
         .wrapper{
             height: 275px;

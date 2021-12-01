@@ -51,6 +51,9 @@
                     font-size: 4vw;
                 }
                 .questions{
+
+                    width: 70%;
+
                     .acc{
 
                         h1{
@@ -68,15 +71,17 @@
         .sections{
             .container{
 
-                h1{
-                    font-size: 5vw;
+                h1.header{
+                    font-size: 6vw;
+                    text-align: center;
                 }
                 .questions{
-                    width: 70%;
+                    padding-top: 10%;
+                    width: 90%;
                     .acc{
 
                         h1{
-                            font-size: 3vw;
+                            font-size: 4vw;
                         }
 
                         span{

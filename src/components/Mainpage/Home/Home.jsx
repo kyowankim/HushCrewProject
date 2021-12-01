@@ -11,7 +11,7 @@ export default function Home() {
 
     return (
         <div className="home" id="home">
-            
+        <div className="color-overlay"/>
             <div className="wrapper">
                 <img src={hushHorizontal} alt="" className="hush-horizontal" />
                 <div className="hush-button">
