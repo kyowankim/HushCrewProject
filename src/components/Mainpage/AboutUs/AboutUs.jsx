@@ -31,15 +31,27 @@ export default function Aboutus() {
     }, []);
     
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
-    const videoID = ["dxtrogpwDE8","IV-Z0J0SsYk","NI-LaLfObYE","W4ROm95bRuI","foYEckTDBwg"]
-    const thumbnail = [
-        "https://i.ytimg.com/vi/dxtrogpwDE8/hqdefault.jpg",
-        "https://i.ytimg.com/vi/IV-Z0J0SsYk/hqdefault.jpg",
-        "https://i.ytimg.com/vi/NI-LaLfObYE/hqdefault.jpg",
-        "https://i.ytimg.com/vi/W4ROm95bRuI/hqdefault.jpg",
-        "https://i.ytimg.com/vi/foYEckTDBwg/hqdefault.jpg"
-    ]
 
+    const url = "https://hush-crew-backend.herokuapp.com/youtube"
+    const [videoID, setVideoID] = useState([])
+    const [thumbnail, setThumbnail] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+
+            const response = await fetch(url)
+            const data = await response.json()
+            const videoIDResult = [];
+            const thumbnailResult = [];
+            for (const element of data){
+                videoIDResult.push(element["id"]["videoId"])
+                thumbnailResult.push(element["snippet"]["thumbnails"]["high"]["url"])
+            }
+            setVideoID(videoIDResult)
+            setThumbnail(thumbnailResult)
+        }
+        fetchData();
+    }, [])
     return (
         <div className="aboutus" id="aboutus">
             <div className="left">
