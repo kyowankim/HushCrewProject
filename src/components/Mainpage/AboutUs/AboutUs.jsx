@@ -32,7 +32,7 @@ export default function Aboutus() {
     
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-    const url = "https://hush-crew-backend.herokuapp.com/youtube"
+    const url = "https://hushcrewbackend-production.up.railway.app/youtube"
     const [videoID, setVideoID] = useState([])
     const [thumbnail, setThumbnail] = useState([])
 
